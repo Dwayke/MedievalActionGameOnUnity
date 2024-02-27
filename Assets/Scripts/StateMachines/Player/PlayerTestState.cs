@@ -5,28 +5,24 @@ using UnityEngine;
 public class PlayerTestState : PlayerBaseState
 {
     public PlayerTestState(PlayerStateMachine stateMachine) : base(stateMachine){ }
-    private float timer = 0f;
-
+    
     public override void Enter()
     {
-        Debug.Log("Enter");
-        stateMachine.InputReader.JumpEvent += OnJump;
+        
     }
 
 
     public override void Tick(float deltaTime)
     {
-        stateMachine.InputReader.JumpEvent += OnJump;
-
-        timer += Time.deltaTime;
-        Debug.Log("Tick");
-        Debug.Log((int)timer);
+        Vector3 movement = new Vector3();
+        movement.x = stateMachine.InputReader.MovementValue.x;
+        movement.y = 0f;
+        movement.z = stateMachine.InputReader.MovementValue.y;
+        stateMachine.transform.Translate(movement*deltaTime);
     }
 
     public override void Exit()
     {
-        Debug.Log("Exit");
-        stateMachine.InputReader.JumpEvent -= OnJump;
     }
 
     private void OnJump()
