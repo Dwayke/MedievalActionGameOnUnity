@@ -1937,6 +1937,7 @@ GameObject:
   - component: {fileID: 8986937622489164476}
   - component: {fileID: 4481259368619343932}
   - component: {fileID: 5474432248022565081}
+  - component: {fileID: 5545186201727908860}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1989,6 +1990,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <InputReader>k__BackingField: {fileID: 4481259368619343932}
+--- !u!95 &5545186201727908860
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835167145986702819}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4fbc27b1ac71f14ab0fa877c93e916b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6044012818222768382
 GameObject:
   m_ObjectHideFlags: 0
