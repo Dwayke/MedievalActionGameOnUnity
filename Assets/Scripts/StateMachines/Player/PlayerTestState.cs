@@ -19,6 +19,7 @@ public class PlayerTestState : PlayerBaseState
         movement.y = 0f;
         movement.z = stateMachine.InputReader.MovementValue.y;
         stateMachine.transform.Translate(movement*deltaTime);
+        stateMachine.CharacterController
     }
 
     public override void Exit()
