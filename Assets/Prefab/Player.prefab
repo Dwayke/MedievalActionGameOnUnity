@@ -963,7 +963,7 @@ SkinnedMeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3728645341653240431}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -1862,6 +1862,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7902274460865090049}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5639284781928103768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4776950931652720827}
+  m_Layer: 0
+  m_Name: CameraFocus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4776950931652720827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5639284781928103768}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8986937622489164476}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5736699655984551424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1954,7 +1985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5835167145986702819}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.72311854, z: -0, w: 0.690724}
+  m_LocalRotation: {x: 0, y: -0.7231179, z: 0, w: 0.6907246}
   m_LocalPosition: {x: 36.64994, y: 11.651999, z: 17.027481}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1964,6 +1995,7 @@ Transform:
   - {fileID: 470149919318814658}
   - {fileID: 7624275991867297023}
   - {fileID: 6706907839019757774}
+  - {fileID: 4776950931652720827}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -92.625, z: 0}
 --- !u!114 &4481259368619343932
@@ -1992,6 +2024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <InputReader>k__BackingField: {fileID: 4481259368619343932}
   <CharacterController>k__BackingField: {fileID: 8424067681576958726}
+  <Animator>k__BackingField: {fileID: 5545186201727908860}
   <FreeLookMovementSpeed>k__BackingField: 6
 --- !u!95 &5545186201727908860
 Animator:
