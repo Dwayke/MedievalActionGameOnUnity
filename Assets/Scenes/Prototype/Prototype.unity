@@ -1253,6 +1253,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5474432248022565081, guid: 0b993acc31f5a0a41847414202ef2456, type: 3}
+      propertyPath: <RotationDamping>k__BackingField
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5835167145986702819, guid: 0b993acc31f5a0a41847414202ef2456, type: 3}
       propertyPath: m_Name
       value: Player
